@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -17,6 +18,6 @@ func main() {
 			fmt.Println("Response status:", resp.Status)
 		}()
 
-		// time.Sleep(2 * time.Second)
+		time.Sleep(2 * time.Second)
 	}
 }
